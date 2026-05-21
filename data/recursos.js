@@ -121,6 +121,15 @@ const recursos = {
             link: "https://drive.google.com/drive/folders/1jLYdMiIvKbjir_6ay7LJrH0KFD9ZzKST?usp=sharing"
         }
 
-    ]
+    ],
+
+    audiolibros: [
+
+    {
+        titulo: "Audiolibro Derecho Penal",
+        link: "https://drive.google.com/drive/folders/1QSEiM5a2QjFEqizVY3lcj6Ax3vLEDbfS?usp=sharing"
+    }
+
+]
 
 };
