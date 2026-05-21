@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TODOS JUNTOS POR DERECHO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="img/logo.png" alt="logo">
+
+            <div>
+                <h1>TODOS JUNTOS</h1>
+                <span>POR DERECHO</span>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+    <!-- LOGO HERO -->
+
+    <img
+    src="img/logo.png"
+    alt="Logo Derecho"
+    class="hero-logo">
+
+    <h2>
+        Repositorio Jurídico Académico
+    </h2>
+
+    <p>
+        Plataforma académica diseñada para compartir
+        recursos, cursos, formatos y material jurídico.
+    </p>
+
+   <a href="#categorias" class="hero-btn">
+    Explorar Recursos
+</a>
+
+</div>
+
+    </section>
+
+    <!-- CATEGORÍAS -->
+
+    <section class="categorias" id="categorias">
+
+        <h2 class="titulo">
+            Categorías Jurídicas
+        </h2>
+
+        <div class="grid-categorias">
+
+            <!-- REDACCIÓN -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+
+                <h3>Redacción Jurídica</h3>
+
+                <p>
+                    Escritos, modelos y documentos legales.
+                </p>
+
+                <button onclick="mostrarContenido('redaccion')">
+                    Ver Recursos
+                </button>
+
+            </div>
+
+            <!-- LAUDOS -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+
+                <h3>Laudos - Estado</h3>
+
+                <p>
+                    Resoluciones y recursos estatales.
+                </p>
+
+                <button onclick="mostrarContenido('laudos')">
+                    Ver Recursos
+                </button>
+
+            </div>
+
+            <!-- FORMATOS -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <h3>Formatos - Proyecto Tesis</h3>
+
+                <p>
+                    Plantillas y formatos académicos.
+                </p>
+
+                <button onclick="mostrarContenido('formatos')">
+                    Ver Recursos
+                </button>
+
+            </div>
+
+            <!-- CURSOS -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h3>Cursos</h3>
+
+                <p>
+                    Material de apoyo académico jurídico.
+                </p>
+
+                <button onclick="mostrarContenido('cursos')">
+                    Ver Recursos
+                </button>
+
+            </div>
+
+            <!-- BALOTARIOS -->
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+
+                <h3>Balotarios</h3>
+
+                <p>
+                    Preguntas y material de evaluación.
+                </p>
+
+                <button onclick="mostrarContenido('balotarios')">
+                    Ver Recursos
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTENIDO DINÁMICO -->
+
+    <section class="contenido" id="contenido">
+
+        <h2 id="tituloContenido">
+            Recursos
+        </h2>
+
+        <div class="lista-recursos" id="listaRecursos">
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="contacto">
+
+        <h3>
+            TODOS JUNTOS POR DERECHO
+        </h3>
+
+        <p>
+            Plataforma académica jurídica estudiantil.
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="data/recursos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
